@@ -1,1 +1,1 @@
-# ScientificComputingPython_Myexercise
+# ScientificComputingPython_Myexercises
