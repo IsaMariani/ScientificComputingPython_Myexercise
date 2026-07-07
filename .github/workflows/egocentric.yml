@@ -1,0 +1,17 @@
+name: Check README for my name
+on: [push, pull_request]
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Verify my name is in README.md
+        run: |
+          if grep -q "Isabella Mariani" README.md; then echo "Please, go ahead!"
+          else
+            echo "What do you think are doing here? This is my domain, no one can enter it!"
+            exit 1
+          fi
+      
+  
