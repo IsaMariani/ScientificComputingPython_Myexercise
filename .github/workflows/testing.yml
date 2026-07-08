@@ -1,0 +1,22 @@
+name: Testing codes
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check-repository
+      uses: actions/checkout@v4
+
+    - name: Python-version
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install-dependencies
+      run: |
+        pip install pytest
+
+    - name: Testing
+      working-directory: MyOwnTest
+      run: |
+        pytest
