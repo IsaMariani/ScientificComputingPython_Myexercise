@@ -16,5 +16,5 @@ L06 Git/GitHub exercises:
   - Q2: created and tested an action (egocentric.yml) that makes to commit only if my name is here 
 
 L08 pytest/pip/cprofile exercises:
-  - Q1: created a silly but funny code, and put it on pytest: $\url{https://test.pypi.org/project/smiling-face/}$
+  - Q1: created a silly but funny code, and put it on pytest: https://test.pypi.org/project/smiling-face/
   - Q2: Implemented a linear and regression test on some simple code, made an action that runs pytest and test if it actually stops to commit in the case the test fails (see Pull requests)
